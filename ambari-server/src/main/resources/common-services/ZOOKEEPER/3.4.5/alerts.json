@@ -1,0 +1,78 @@
+{
+  "ZOOKEEPER": {
+    "service": [
+      {
+        "name": "zookeeper_server_process_percent",
+        "label": "Percent ZooKeeper Servers Available",
+        "description": "这个警告是如果集群中无法使用的ZooKeeper服务器数大于配置的临界阈值时触发。它集ZooKeeper过程检查结果。",
+        "interval": 1,
+        "scope": "SERVICE",
+        "enabled": true,
+        "source": {
+          "type": "AGGREGATE",
+          "alert_name": "zookeeper_server_process",
+          "reporting": {
+            "ok": {
+              "text": "affected: [{1}], total: [{0}]"
+            },
+            "warning": {
+              "text": "affected: [{1}], total: [{0}]",
+              "value": 35
+            },
+            "critical": {
+              "text": "affected: [{1}], total: [{0}]",
+              "value": 70
+            },
+            "units" : "%",
+            "type": "PERCENT"
+          }
+        }
+      }  
+    ],
+    "ZOOKEEPER_SERVER": [
+      {
+        "name": "zookeeper_server_process",
+        "label": "ZooKeeper Server Process",
+        "description": "这个主机级别的警报由如果ZooKeeper服务器进程无法被确定为正常运行触发。",
+        "interval": 1,
+        "scope": "ANY",
+        "source": {
+          "type": "PORT",
+          "uri": "{{zoo.cfg/clientPort}}",
+          "default_port": 2181,
+          "reporting": {
+            "ok": {
+              "text": "TCP OK - {0:.3f}s response on port {1}"
+            },
+            "warning": {
+              "text": "TCP OK - {0:.3f}s response on port {1}",
+              "value": 1.5
+            },
+            "critical": {
+              "text": "Connection failed: {0} to {1}:{2}",
+              "value": 5.0
+            }
+          },
+          "parameters": [
+            {
+              "name": "socket.command",
+              "display_name": "Socket Command",
+              "value": "ruok",
+              "description": "一个socket命令查询ZooKeeper响应状态。预期的响应是imok。",
+              "type": "STRING",
+              "visibility": "HIDDEN"
+            },
+            {
+              "name": "socket.command.response",
+              "display_name": "Expected Response",
+              "value": "imok",
+              "description": "对于socket命令的预期回应.",
+              "type": "STRING",
+              "visibility": "HIDDEN"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
