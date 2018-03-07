@@ -1,13 +1,534 @@
 {
-  "href" : "http://c6401.ambari.apache.org:8080/api/v1/privileges?PrivilegeInfo/principal_name=admin&fields=PrivilegeInfo/*",
+  "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations?fields=*&_=1520314534792",
   "items" : [
     {
-      "href" : "http://c6401.ambari.apache.org:8080/api/v1/privileges/1",
-      "PrivilegeInfo" : {
-        "permission_name" : "AMBARI.ADMINISTRATOR",
-        "principal_name" : "admin",
-        "principal_type" : "USER",
-        "privilege_id" : 1
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/AMBARI.ADD_DELETE_CLUSTERS",
+      "AuthorizationInfo" : {
+        "authorization_id" : "AMBARI.ADD_DELETE_CLUSTERS",
+        "authorization_name" : "Create new clusters",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/AMBARI.ASSIGN_ROLES",
+      "AuthorizationInfo" : {
+        "authorization_id" : "AMBARI.ASSIGN_ROLES",
+        "authorization_name" : "Assign roles",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/AMBARI.EDIT_STACK_REPOS",
+      "AuthorizationInfo" : {
+        "authorization_id" : "AMBARI.EDIT_STACK_REPOS",
+        "authorization_name" : "Edit stack repository URLs",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/AMBARI.MANAGE_GROUPS",
+      "AuthorizationInfo" : {
+        "authorization_id" : "AMBARI.MANAGE_GROUPS",
+        "authorization_name" : "Manage groups",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/AMBARI.MANAGE_SETTINGS",
+      "AuthorizationInfo" : {
+        "authorization_id" : "AMBARI.MANAGE_SETTINGS",
+        "authorization_name" : "Manage administrative settings",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/AMBARI.MANAGE_STACK_VERSIONS",
+      "AuthorizationInfo" : {
+        "authorization_id" : "AMBARI.MANAGE_STACK_VERSIONS",
+        "authorization_name" : "Manage stack versions",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/AMBARI.MANAGE_USERS",
+      "AuthorizationInfo" : {
+        "authorization_id" : "AMBARI.MANAGE_USERS",
+        "authorization_name" : "Manage users",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/AMBARI.MANAGE_VIEWS",
+      "AuthorizationInfo" : {
+        "authorization_id" : "AMBARI.MANAGE_VIEWS",
+        "authorization_name" : "Manage Ambari Views",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/AMBARI.RENAME_CLUSTER",
+      "AuthorizationInfo" : {
+        "authorization_id" : "AMBARI.RENAME_CLUSTER",
+        "authorization_name" : "Rename clusters",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/AMBARI.RUN_CUSTOM_COMMAND",
+      "AuthorizationInfo" : {
+        "authorization_id" : "AMBARI.RUN_CUSTOM_COMMAND",
+        "authorization_name" : "Perform custom administrative actions",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/CLUSTER.MANAGE_ALERTS",
+      "AuthorizationInfo" : {
+        "authorization_id" : "CLUSTER.MANAGE_ALERTS",
+        "authorization_name" : "Manage cluster-level alerts",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/CLUSTER.MANAGE_ALERT_NOTIFICATIONS",
+      "AuthorizationInfo" : {
+        "authorization_id" : "CLUSTER.MANAGE_ALERT_NOTIFICATIONS",
+        "authorization_name" : "Manage alert notifications configuration",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/CLUSTER.MANAGE_AUTO_START",
+      "AuthorizationInfo" : {
+        "authorization_id" : "CLUSTER.MANAGE_AUTO_START",
+        "authorization_name" : "Manage service auto-start configuration",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/CLUSTER.MANAGE_CONFIG_GROUPS",
+      "AuthorizationInfo" : {
+        "authorization_id" : "CLUSTER.MANAGE_CONFIG_GROUPS",
+        "authorization_name" : "Manage cluster config groups",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/CLUSTER.MANAGE_CREDENTIALS",
+      "AuthorizationInfo" : {
+        "authorization_id" : "CLUSTER.MANAGE_CREDENTIALS",
+        "authorization_name" : "Manage external credentials",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/CLUSTER.MANAGE_USER_PERSISTED_DATA",
+      "AuthorizationInfo" : {
+        "authorization_id" : "CLUSTER.MANAGE_USER_PERSISTED_DATA",
+        "authorization_name" : "Manage cluster-level user persisted data",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/CLUSTER.MODIFY_CONFIGS",
+      "AuthorizationInfo" : {
+        "authorization_id" : "CLUSTER.MODIFY_CONFIGS",
+        "authorization_name" : "Modify cluster configurations",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/CLUSTER.RUN_CUSTOM_COMMAND",
+      "AuthorizationInfo" : {
+        "authorization_id" : "CLUSTER.RUN_CUSTOM_COMMAND",
+        "authorization_name" : "Perform custom cluster-level actions",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/CLUSTER.TOGGLE_ALERTS",
+      "AuthorizationInfo" : {
+        "authorization_id" : "CLUSTER.TOGGLE_ALERTS",
+        "authorization_name" : "Enable/disable cluster-level alerts",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/CLUSTER.TOGGLE_KERBEROS",
+      "AuthorizationInfo" : {
+        "authorization_id" : "CLUSTER.TOGGLE_KERBEROS",
+        "authorization_name" : "Enable/disable Kerberos",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/CLUSTER.UPGRADE_DOWNGRADE_STACK",
+      "AuthorizationInfo" : {
+        "authorization_id" : "CLUSTER.UPGRADE_DOWNGRADE_STACK",
+        "authorization_name" : "Upgrade/downgrade stack",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/CLUSTER.VIEW_ALERTS",
+      "AuthorizationInfo" : {
+        "authorization_id" : "CLUSTER.VIEW_ALERTS",
+        "authorization_name" : "View cluster-level alerts",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/CLUSTER.VIEW_CONFIGS",
+      "AuthorizationInfo" : {
+        "authorization_id" : "CLUSTER.VIEW_CONFIGS",
+        "authorization_name" : "View configuration",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/CLUSTER.VIEW_METRICS",
+      "AuthorizationInfo" : {
+        "authorization_id" : "CLUSTER.VIEW_METRICS",
+        "authorization_name" : "View metrics",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/CLUSTER.VIEW_STACK_DETAILS",
+      "AuthorizationInfo" : {
+        "authorization_id" : "CLUSTER.VIEW_STACK_DETAILS",
+        "authorization_name" : "View stack version details",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/CLUSTER.VIEW_STATUS_INFO",
+      "AuthorizationInfo" : {
+        "authorization_id" : "CLUSTER.VIEW_STATUS_INFO",
+        "authorization_name" : "View status information",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/HOST.ADD_DELETE_COMPONENTS",
+      "AuthorizationInfo" : {
+        "authorization_id" : "HOST.ADD_DELETE_COMPONENTS",
+        "authorization_name" : "Install components",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/HOST.ADD_DELETE_HOSTS",
+      "AuthorizationInfo" : {
+        "authorization_id" : "HOST.ADD_DELETE_HOSTS",
+        "authorization_name" : "Add/Delete hosts",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/HOST.TOGGLE_MAINTENANCE",
+      "AuthorizationInfo" : {
+        "authorization_id" : "HOST.TOGGLE_MAINTENANCE",
+        "authorization_name" : "Turn on/off maintenance mode",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/HOST.VIEW_CONFIGS",
+      "AuthorizationInfo" : {
+        "authorization_id" : "HOST.VIEW_CONFIGS",
+        "authorization_name" : "View configuration",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/HOST.VIEW_METRICS",
+      "AuthorizationInfo" : {
+        "authorization_id" : "HOST.VIEW_METRICS",
+        "authorization_name" : "View metrics",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/HOST.VIEW_STATUS_INFO",
+      "AuthorizationInfo" : {
+        "authorization_id" : "HOST.VIEW_STATUS_INFO",
+        "authorization_name" : "View status information",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/SERVICE.ADD_DELETE_SERVICES",
+      "AuthorizationInfo" : {
+        "authorization_id" : "SERVICE.ADD_DELETE_SERVICES",
+        "authorization_name" : "Add/delete services",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/SERVICE.COMPARE_CONFIGS",
+      "AuthorizationInfo" : {
+        "authorization_id" : "SERVICE.COMPARE_CONFIGS",
+        "authorization_name" : "Compare configurations",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/SERVICE.DECOMMISSION_RECOMMISSION",
+      "AuthorizationInfo" : {
+        "authorization_id" : "SERVICE.DECOMMISSION_RECOMMISSION",
+        "authorization_name" : "Decommission/recommission",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/SERVICE.ENABLE_HA",
+      "AuthorizationInfo" : {
+        "authorization_id" : "SERVICE.ENABLE_HA",
+        "authorization_name" : "Enable HA",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/SERVICE.MANAGE_ALERTS",
+      "AuthorizationInfo" : {
+        "authorization_id" : "SERVICE.MANAGE_ALERTS",
+        "authorization_name" : "Manage service-level alerts",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/SERVICE.MANAGE_AUTO_START",
+      "AuthorizationInfo" : {
+        "authorization_id" : "SERVICE.MANAGE_AUTO_START",
+        "authorization_name" : "Manage service auto-start",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/SERVICE.MANAGE_CONFIG_GROUPS",
+      "AuthorizationInfo" : {
+        "authorization_id" : "SERVICE.MANAGE_CONFIG_GROUPS",
+        "authorization_name" : "Manage configuration groups",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/SERVICE.MODIFY_CONFIGS",
+      "AuthorizationInfo" : {
+        "authorization_id" : "SERVICE.MODIFY_CONFIGS",
+        "authorization_name" : "Modify configurations",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/SERVICE.MOVE",
+      "AuthorizationInfo" : {
+        "authorization_id" : "SERVICE.MOVE",
+        "authorization_name" : "Move to another host",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/SERVICE.RUN_CUSTOM_COMMAND",
+      "AuthorizationInfo" : {
+        "authorization_id" : "SERVICE.RUN_CUSTOM_COMMAND",
+        "authorization_name" : "Perform service-specific tasks",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/SERVICE.RUN_SERVICE_CHECK",
+      "AuthorizationInfo" : {
+        "authorization_id" : "SERVICE.RUN_SERVICE_CHECK",
+        "authorization_name" : "Run service checks",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/SERVICE.SET_SERVICE_USERS_GROUPS",
+      "AuthorizationInfo" : {
+        "authorization_id" : "SERVICE.SET_SERVICE_USERS_GROUPS",
+        "authorization_name" : "Set service users and groups",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/SERVICE.START_STOP",
+      "AuthorizationInfo" : {
+        "authorization_id" : "SERVICE.START_STOP",
+        "authorization_name" : "Start/Stop/Restart Service",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/SERVICE.TOGGLE_ALERTS",
+      "AuthorizationInfo" : {
+        "authorization_id" : "SERVICE.TOGGLE_ALERTS",
+        "authorization_name" : "Enable/disable service-level alerts",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/SERVICE.TOGGLE_MAINTENANCE",
+      "AuthorizationInfo" : {
+        "authorization_id" : "SERVICE.TOGGLE_MAINTENANCE",
+        "authorization_name" : "Turn on/off maintenance mode",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/SERVICE.VIEW_ALERTS",
+      "AuthorizationInfo" : {
+        "authorization_id" : "SERVICE.VIEW_ALERTS",
+        "authorization_name" : "View service-level alerts",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/SERVICE.VIEW_CONFIGS",
+      "AuthorizationInfo" : {
+        "authorization_id" : "SERVICE.VIEW_CONFIGS",
+        "authorization_name" : "View configurations",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/SERVICE.VIEW_METRICS",
+      "AuthorizationInfo" : {
+        "authorization_id" : "SERVICE.VIEW_METRICS",
+        "authorization_name" : "View metrics",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/SERVICE.VIEW_OPERATIONAL_LOGS",
+      "AuthorizationInfo" : {
+        "authorization_id" : "SERVICE.VIEW_OPERATIONAL_LOGS",
+        "authorization_name" : "View service operational logs",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/SERVICE.VIEW_STATUS_INFO",
+      "AuthorizationInfo" : {
+        "authorization_id" : "SERVICE.VIEW_STATUS_INFO",
+        "authorization_name" : "View status information",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
+      }
+    },
+    {
+      "href" : "http://172.30.81.118:8080/api/v1/users/admin/authorizations/VIEW.USE",
+      "AuthorizationInfo" : {
+        "authorization_id" : "VIEW.USE",
+        "authorization_name" : "Use View",
+        "cluster_name" : null,
+        "resource_type" : "AMBARI",
+        "user_name" : "admin"
       }
     }
   ]
