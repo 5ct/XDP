@@ -72,9 +72,13 @@ App.AlertInstance = DS.Model.extend({
         serviceName = serviceName.toCapital();
       }
     }
-	if(serviceName.indexOf("Ambari")>-1){
-		serviceName=serviceName.replace(/Ambari/, "XDP");
+	// if(serviceName.indexOf("Ambari")>-1){
+	// 	serviceName=serviceName.replace(/Ambari/, "XDP");
+  // }
+  if(serviceName.toLowerCase().indexOf("ambari") > -1){
+		serviceName = serviceName.replace(/ambari/i, "XDP");
 	}
+
     return serviceName;
   }.property('serviceName', 'service.displayName'),
 

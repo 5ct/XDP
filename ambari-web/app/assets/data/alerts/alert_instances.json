@@ -9,13 +9,13 @@
         "host_name" : "c6401.ambari.apache.org",
         "id" : 55555,
         "instance" : null,
-        "label" : "Ambari Metric error",
+        "label" : "AmbaRi Metric error",
         "latest_timestamp" : 1415224354965,
         "maintenance_state" : "OFF",
         "name" : "namenode_webui",
         "original_timestamp" : 1414695756761,
         "scope" : "ANY",
-        "service_name" : "Ambari Metric",
+        "service_name" : "AMBARi Metric",
         "state" : "CRITICAL",
         "text" : "Connection failed to c6401.ambari.apache.org:50070"
       }

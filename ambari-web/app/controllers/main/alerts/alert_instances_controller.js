@@ -36,7 +36,7 @@ App.MainAlertInstancesController = Em.Controller.extend({
   updateUnhealthyAlertInstancesOnce: function() {
     var alertInstances = App.AlertInstance.find().filter(function (item) {
       return ['CRITICAL', 'WARNING'].contains(item.get('state'));
-    });
+    })
     this.set('unhealthyAlertInstances', alertInstances);
   },
 
@@ -245,7 +245,10 @@ App.MainAlertInstancesController = Em.Controller.extend({
         filteredCount: Em.computed.alias('App.router.mainAlertDefinitionsController.unhealthyAlertInstancesCount'),
 
         content: function () {
-          return this.get('controller.unhealthyAlertInstances');
+          return this.get('controller.unhealthyAlertInstances').map(function(item){
+            item.set('label', item.get('label').replace(/ambari/i, "XDP"));
+            return item;
+          });
         }.property('controller.unhealthyAlertInstances.@each.state'),
 
         isLoaded: Em.computed.bool('controller.unhealthyAlertInstances'),
