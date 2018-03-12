@@ -2,6 +2,25 @@
   "href" : "http://c6401.ambari.apache.org:8080/api/v1/clusters/c/alerts?fields=*",
   "items" : [
     {
+      "href" : "http://c6401.ambari.apache.org:8080/api/v1/clusters/c/alerts/5",
+      "Alert" : {
+        "cluster_name" : "c",
+        "component_name" : "NAMENODE",
+        "host_name" : "c6401.ambari.apache.org",
+        "id" : 55555,
+        "instance" : null,
+        "label" : "Ambari Metric error",
+        "latest_timestamp" : 1415224354965,
+        "maintenance_state" : "OFF",
+        "name" : "namenode_webui",
+        "original_timestamp" : 1414695756761,
+        "scope" : "ANY",
+        "service_name" : "Ambari Metric",
+        "state" : "CRITICAL",
+        "text" : "Connection failed to c6401.ambari.apache.org:50070"
+      }
+    },
+    {
       "href" : "http://c6401.ambari.apache.org:8080/api/v1/clusters/c/alerts/18",
       "Alert" : {
         "cluster_name" : "c",
