@@ -1080,10 +1080,10 @@ Em.I18n.translations = {
   'alerts.add.step3.header': '检查',
   'alerts.add.step3.selectedType': '选中的类型',
 
-  'alerts.fastAccess.popup.header': '{0} 个重要或警告提醒',
+  'alerts.fastAccess.popup.header': '{0}个Critical或Warning警告',
   'alerts.fastAccess.popup.body.name': '警告定义名称',
   'alerts.fastAccess.popup.body.showmore': '前往警告定义',
-  'alerts.fastAccess.popup.body.noalerts': '无可显示的重要或警告提醒',
+  'alerts.fastAccess.popup.body.noalerts': '无可显示的Critical或Warning警告',
 
   'alerts.actions.create': '创建警告',
   'alerts.actions.manageGroups': '管理警告群组',

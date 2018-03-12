@@ -117,7 +117,18 @@ App.HostProgressPopupBodyView = App.TableView.extend({
    * @type {wrappedService[]}
    */
   services: function () {
-    return this.get('controller.servicesInfo');
+    return this.get('controller.servicesInfo').map(function (info) {
+      info.set('name', info.get('name').replace(/ambari/i, "XDP"));
+      info.set('duration', info.get('duration').replace(/secs/i, "秒"));
+      var currentTime = new Date(info.get('startTime'))
+      var month = currentTime.getMonth() < 9 ? '0' + (currentTime.getMonth() + 1) : '' + (currentTime.getMonth() + 1)
+      var date = currentTime.getDate() < 10 ? '0' + currentTime.getDate() : '' + currentTime.getDate()
+      var hours = currentTime.getHours() < 10 ? '0' + currentTime.getHours() : '' + currentTime.getHours()
+      var minutes = currentTime.getMinutes()< 10 ? '0' + currentTime.getMinutes() : '' + currentTime.getMinutes()
+      var startTime = currentTime.getFullYear() + '-' + month + '-' + date + ' ' + hours + ':' + minutes;
+      info.set('startTime', startTime); 
+      return info;
+    });
   }.property('controller.servicesInfo.[]'),
 
   /**
@@ -235,7 +246,11 @@ App.HostProgressPopupBodyView = App.TableView.extend({
    */
   tasks: function () {
     var currentHost = this.get('currentHost');
-    return currentHost ? currentHost.get('tasks') : [];
+    return currentHost ? currentHost.get('tasks').map(function (task) {
+      console.log('----------------------commandDetail is ' + task.commandDetail);
+      task.set('commandDetail', task.get('commandDetail').replace(/ambari/i, "XDP"));
+      return task;
+    }) : [];
   }.property('currentHost.tasks', 'currentHost.tasks.@each.status'),
 
 
