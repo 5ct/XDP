@@ -214,7 +214,7 @@ Em.I18n.translations = {
   'common.notAvailable': '不可用',
   'common.na': 'n/a',
   'common.operations': '操作',
-  'common.startTime': '开始试驾',
+  'common.startTime': '开始时间',
   'common.duration': '持续时长',
   'common.reinstall': '重新安装',
   'common.revert': '返回',
