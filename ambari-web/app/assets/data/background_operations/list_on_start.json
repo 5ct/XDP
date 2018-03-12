@@ -3,6 +3,31 @@
   "itemTotal" : "10",
   "items" : [
     {
+      "href" : "http://162.216.151.112:8080/api/v1/clusters/c1/requests/22",
+      "Requests" : {
+        "aborted_task_count" : 0,
+        "cluster_name" : "c1",
+        "completed_task_count" : 3,
+        "create_time" : 1420801929946,
+        "end_time" : 1420801992902,
+        "exclusive" : false,
+        "failed_task_count" : 0,
+        "id" : 14,
+        "inputs" : null,
+        "operation_level" : null,
+        "progress_percent" : 66.0,
+        "queued_task_count" : 0,
+        "request_context" : "Ambari Metric/install packages",
+        "request_schedule" : null,
+        "request_status" : "IN_PROGRESS",
+        "resource_filters" : [ ],
+        "start_time" : 1420801978494,
+        "task_count" : 3,
+        "timed_out_task_count" : 0,
+        "type" : "INTERNAL_REQUEST"
+      }
+    },
+    {
       "href" : "http://162.216.151.112:8080/api/v1/clusters/c1/requests/17",
       "Requests" : {
         "aborted_task_count" : 0,
@@ -22,31 +47,6 @@
         "request_status" : "IN_PROGRESS",
         "resource_filters" : [ ],
         "start_time" : 1420732929071,
-        "task_count" : 3,
-        "timed_out_task_count" : 0,
-        "type" : "INTERNAL_REQUEST"
-      }
-    },
-    {
-      "href" : "http://162.216.151.112:8080/api/v1/clusters/c1/requests/18",
-      "Requests" : {
-        "aborted_task_count" : 0,
-        "cluster_name" : "c1",
-        "completed_task_count" : 3,
-        "create_time" : 1420741144265,
-        "end_time" : 1420741162446,
-        "exclusive" : false,
-        "failed_task_count" : 0,
-        "id" : 18,
-        "inputs" : null,
-        "operation_level" : null,
-        "progress_percent" : 100.0,
-        "queued_task_count" : 0,
-        "request_context" : "Distribute repositories/install packages",
-        "request_schedule" : null,
-        "request_status" : "COMPLETED",
-        "resource_filters" : [ ],
-        "start_time" : 1420741144295,
         "task_count" : 3,
         "timed_out_task_count" : 0,
         "type" : "INTERNAL_REQUEST"

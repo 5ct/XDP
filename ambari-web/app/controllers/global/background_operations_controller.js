@@ -367,6 +367,7 @@ App.BackgroundOperationsController = Em.Controller.extend({
     // load the checkbox on footer first, then show popup.
     var self = this;
     App.router.get('userSettingsController').dataLoading('show_bg').done(function (initValue) {
+      console.log('---------initValue is ' + initValue);
       App.updater.immediateRun('requestMostRecent');
       if(self.get('popupView') && App.HostPopup.get('isBackgroundOperations')){
         self.set ('popupView.isNotShowBgChecked', !initValue);
