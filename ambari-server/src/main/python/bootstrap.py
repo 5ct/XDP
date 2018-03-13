@@ -73,7 +73,7 @@ class HostLog:
     text = str(log_text)
     if not text.endswith("\n"):
       text += "\n"
-    logFile.write(text)
+    logFile.write(text.replace('ambari','xdp'))
     logFile.close()
 
 
