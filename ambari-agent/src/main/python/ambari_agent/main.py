@@ -427,7 +427,7 @@ def main(heartbeat_stop_callback=None):
       server_url = config.get_api_url(server_hostname)
       try:
         server_ip = socket.gethostbyname(server_hostname)
-        logger.info('Connecting to Ambari server at %s (%s)', server_url, server_ip)
+        logger.info('Connecting to xdp server at %s (%s)', server_url, server_ip)
       except socket.error:
         logger.warn("Unable to determine the IP address of the Ambari server '%s'", server_hostname)
 
@@ -437,7 +437,7 @@ def main(heartbeat_stop_callback=None):
 
       # if connected, launch controller
       if connected:
-        logger.info('Connected to Ambari server %s', server_hostname)
+        logger.info('Connected to xdp server %s', server_hostname)
         # Set the active server
         active_server = server_hostname
         # Launch Controller communication
